@@ -1,0 +1,42 @@
+.card {
+    border:none;
+    width: 500px;
+    height: 645px;
+    padding: 40px;
+    position:absolute;
+    top: 580%;
+    left: 100%;
+    bottom:70%;
+    transform: translate(-50%, 0%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(180, 233, 245) 0%, rgba(72, 72, 241, 0.726) 100%);
+}
+
+.card h1, h6 {
+    color: rgb(0, 0, 0);
+}
+label {
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    background-size:cover 50cm;
+     float: center;
+     height: 100vh;
+     padding:0; 
+     margin: left;
+ }
+
+
+ .form-control.ng-touched.ng-invalid {
+    border:2px solid red;
+   }
+.form-control.ng-touched.ng-valid {
+    border:2px solid green;
+   }
+
+
+a {
+    color:rgb(0, 0, 0);
+    margin-top:10px;
+}

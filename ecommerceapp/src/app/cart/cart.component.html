@@ -1,0 +1,51 @@
+<div class="col-md-12 bg-light text-right">
+  <button routerLink="/user-login" class="btn btn-danger mx-2" id="logout">Logout</button>
+</div>
+
+<div class="container">
+<form>
+  <table class="table table-bordered table-striped" >
+    <thead class="table-dark">
+    <tr>
+      <th>Icon</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+      <div class="cart-item" *ngFor="let item of items">
+        <tr *ngIf="item">
+          <td><img [src]="item.icon" width="200" height="200"></td>
+          <td>{{item.name}}</td>
+          <td>{{item.description}}</td>
+          <td>{{item.quantity}}</td>
+          <td>{{item.price}}</td>
+      </tr>
+      <div class="col-md-12 bg-light text-right">
+        <button routerLink="/thankyou" type="button" class="btn btn-primary" (click)="isPurchase(item)" id="purchase">Purchase</button>
+      </div>
+      </div>
+
+      <tr>
+        <td><img src="https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x13-amd-series.png?context=bWFzdGVyfHJvb3R8OTcwNzZ8aW1hZ2UvcG5nfGg2MC9oODIvMTQxOTE2MTQxNjUwMjIucG5nfDE3OTNjZDgyYTBlOTkwMDJmODMxY2FlNWY4YjQ2NDFjNjNlNDZhNzU1ZDk5N2Y3MGQ0Y2FhMzA1MzYxMDI2YjY"></td>
+        <td>Laptop</td>
+        <td>Lenovo Laptop</td>
+        <td>5</td>
+        <td>2300 AED</td>
+      </tr>
+    </tbody>
+  </table>
+
+</form>
+</div>
+
+<br><br>
+  <!-- Notification for no products in Cart! -->
+  <div *ngIf="items?.length == 0" class="col-lg-12 col-md-12 col-xl-12">
+    <div class="alert alert-info" role="alert">
+      <h4 class="alert-heading">No items in the cart :)!</h4>
+      <p>Your cart is empty, please select your products :)</p>
+    </div>
+  </div>

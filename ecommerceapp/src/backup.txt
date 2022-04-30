@@ -1,0 +1,19 @@
+    // const product1 = new Products();
+    // product1.id = 2;
+    // product1.name = 'Laptop - HP';
+    // product1.description = 'Electronics';
+    // product1.price = 1000;
+
+    // const product2 = new Products();
+    // product2.id = 2;
+    // product2.name = 'Laptop - Lenovo';
+    // product2.description = 'Electronics';
+    // product2.price = 1500;
+
+    // this.products.push(product1);
+    // this.products.push(product2);
+
+
+    --
+
+     // products: Array<Products> = [];

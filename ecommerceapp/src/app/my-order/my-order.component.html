@@ -1,0 +1,48 @@
+<div class="col-md-12 bg-light text-right">
+  <button routerLink="/user-login" class="btn btn-danger mx-2" id="logout">Logout</button>
+</div>
+<div class="container">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark">
+      <tr>
+        <th>Product ID</th>
+        <th>Order Number</th>
+        <th>Order ID</th>
+        <th>Quantity</th>
+        <th>Total</th>
+        <th>Status</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr class="order-item" *ngFor="let order of myOrder">
+          <td><span>{{order.id}}</span></td>
+          <td><span>#12</span></td>
+          <td><span>O001</span></td>
+          <td><span>{{order.quantity}}</span></td>
+          <td><span>{{order.price}}</span></td>
+          <td><span>Processing</span></td>
+        </tr>
+        <tr *ngFor="let order of orders">
+          <td><span>{{order.id}}</span></td>
+          <td><span>{{order.orderCode}}</span></td>
+          <td><span>{{order.orderNumber}}</span></td>
+          <td><span>{{order.productCount}}</span></td>
+          <td><span>{{order.totalCost}}</span></td>
+          <td><span>{{order.status}}</span></td>
+        </tr>
+        <tr>
+          <td><span>7</span></td>
+          <td><span>001</span></td>
+          <td><span>7</span></td>
+          <td><span>5</span></td>
+          <td><span>4600 AED</span></td>
+          <td>Done</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <body *ngIf="currentUser?.users_role == 'customer'">
+      <span><a routerLink="/my-profile" href="#">My Profile</a></span>
+    </body>
+  </div>
+

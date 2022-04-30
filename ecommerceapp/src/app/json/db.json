@@ -1,0 +1,31 @@
+{
+  "signUpUsers": [
+    {
+      "fullname": "Alex",
+      "email": "alex@gmail.com",
+      "mobile": 501234567,
+      "password": "121212",
+      "users_role":"customer",
+      "id": 1
+    },
+    {
+      "fullname": "Admin",
+      "email": "admin@gmail.com",
+      "mobile": 509999999,
+      "password": "admin",
+      "users_role":"admin",
+      "id": 2
+    }
+  ],
+  
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

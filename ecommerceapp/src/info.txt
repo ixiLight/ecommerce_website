@@ -1,0 +1,16 @@
+** Q:
+- minute: 17:20 --> running json / 
+    link: https://www.youtube.com/watch?v=eMJ5spB3P1c
+    json-serve --watch db.json (does not run & work in CLI)-
+
+- is it okay to rename the components?
+
+
+- local storage --> https://www.youtube.com/watch?v=v1MxgoKg3QQ
+
+
+- Reached --> https://www.javainuse.com/fullstack/ecommerce/book3 --> Also we will be modifying the book list that we have received from the backend. We add the value of retrievedImage to display the image.
+
+
+
+02:03:17 FULL STACK
